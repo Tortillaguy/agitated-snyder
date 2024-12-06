@@ -59,14 +59,14 @@ function App() {
     <>
       {!payload && <h1>Loading...</h1>}
       {payload && (
-        <ol>
+        <ul>
           {payload
             .slice(0, animIndex)
             .split("")
             .map((char, index) => (
               <li key={index}>{char}</li>
             ))}
-        </ol>
+        </ul>
       )}
     </>
   );
